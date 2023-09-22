@@ -1,4 +1,5 @@
 package org.example.InMemoryModel;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +16,7 @@ public class ModelStore implements IModelChanger {
         models.add(new PoligonalModel(new ArrayList<Texture>()));
         cameras.add(new Camera());
         scenes.add(new Flash());
-        flashes.add(new Scene(0, models,flashes,cameras));
+        flashes.add(new Scene(0, models, flashes, cameras));
 
     }
 
@@ -25,13 +26,13 @@ public class ModelStore implements IModelChanger {
     public List<Flash> scenes;
     private IModelChangerObserver[] changeObservers;
 
-// Регистрирует изменения
+    // Регистрирует изменения
     @Override
     public void notifyChange(IModelChanger sender) {
 
     }
 
-    public Scene getScene(Integer id){
+    public Scene getScene(Integer id) {
         return null;
     }
 }

@@ -1,5 +1,8 @@
 package org.example.ModelElements;
 
+import org.w3c.dom.ls.LSOutput;
+
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +15,7 @@ public class Scene {
 
     public List<Camera> cameras = new ArrayList<Camera>();
 
-    public Scene(int id, List<PoligonalModel> models, List<Scene> flashes, List<Camera> cameras) throws Exception {
+    public Scene(int id, List<PoligonalModel> models, List<Flash> flashes, List<Camera> cameras) throws Exception {
         this.id = id;
         if (models.size() > 0) {
             this.models = models;
