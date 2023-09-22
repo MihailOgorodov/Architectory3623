@@ -2,27 +2,24 @@ package org.example.InMemoryModel;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.example.ModelElements.Camera;
-import org.example.ModelElements.Flash;
-import org.example.ModelElements.PolygonalModel;
-import org.example.ModelElements.Scene;
+import org.example.ModelElements.*;
 
 
 public class ModelStore implements IModelChanger {
-    public ModelStore(IModelChangerObserver[] changeObservers) {
+    public ModelStore(IModelChangerObserver[] changeObservers) throws Exception {
         this.changeObservers = changeObservers;
         this.models = new ArrayList<>();
         this.cameras = new ArrayList<>();
         this.scenes = new ArrayList<Flash>();
         this.flashes = new ArrayList<Scene>();
-        models.add(new PolygonalModel());
+        models.add(new PoligonalModel(new ArrayList<Texture>()));
         cameras.add(new Camera());
         scenes.add(new Flash());
-        flashes.add(new Scene());
+        flashes.add(new Scene(0, models,flashes,cameras));
 
     }
 
-    public List<PolygonalModel> models;
+    public List<PoligonalModel> models;
     public List<Camera> cameras;
     public List<Scene> flashes;
     public List<Flash> scenes;
