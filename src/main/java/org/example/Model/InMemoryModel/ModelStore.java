@@ -1,9 +1,10 @@
-package org.example.InMemoryModel;
+package org.example.Model.InMemoryModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.example.ModelElements.*;
+import org.example.Model.ModelElements.*;
+
 
 
 public class ModelStore implements IModelChanger {
@@ -16,8 +17,8 @@ public class ModelStore implements IModelChanger {
         models.add(new PoligonalModel(new ArrayList<Texture>()));
         cameras.add(new Camera());
         scenes.add(new Flash());
-        flashes.add(new Scene(0, models, flashes, cameras));
-
+//        flashes.add(new Scene(0, models, flashes, cameras));
+//
     }
 
     public List<PoligonalModel> models;

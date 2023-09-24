@@ -1,4 +1,4 @@
-package org.example.InMemoryModel;
+package org.example.Model.InMemoryModel;
 
 // Интерфейс смены наблюдателя
 public interface IModelChanger {

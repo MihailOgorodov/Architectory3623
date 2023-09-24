@@ -1,7 +1,7 @@
-package org.example.ModelElements;
+package org.example.Model.ModelElements;
 
-import org.example.Staff.Angle3D;
-import org.example.Staff.Point3D;
+import org.example.Model.Staff.Angle3D;
+import org.example.Model.Staff.Point3D;
 
 public class Camera {
 

@@ -1,8 +1,5 @@
-package org.example.ModelElements;
+package org.example.Model.ModelElements;
 
-import org.w3c.dom.ls.LSOutput;
-
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 

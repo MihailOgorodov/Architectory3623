@@ -1,6 +1,6 @@
-package org.example.ModelElements;
+package org.example.Model.ModelElements;
 
-import org.example.Staff.Point3D;
+import org.example.Model.Staff.Point3D;
 
 import java.util.ArrayList;
 import java.util.List;

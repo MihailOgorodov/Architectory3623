@@ -1,4 +1,4 @@
-package org.example.ModelElements;
+package org.example.Model.ModelElements;
 
 import java.util.ArrayList;
 import java.util.List;
