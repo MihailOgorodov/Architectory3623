@@ -36,28 +36,21 @@ public class Main {
 
         List<ItemGenerator> itemGeneratorList = new ArrayList<>();
         itemGeneratorList.add(f1);
-        itemGeneratorList.add(f2);
-        itemGeneratorList.add(f3);
-        itemGeneratorList.add(f4);
-        itemGeneratorList.add(f5);
-        itemGeneratorList.add(f6);
-        itemGeneratorList.add(f7);
-        itemGeneratorList.add(f8);
-
-
-        public class RewardFactory {
-            private final Random rnd = new Random();
+        for (int i = 0; i < 3; i++) {
+            itemGeneratorList.add(f2);
         }
-        public SilverGenerator createReward(); {
-            int randomNumber = rnd.nextInt(14);
+        for (int i = 0; i < 10; i++) {
+            itemGeneratorList.add(f3);
+            itemGeneratorList.add(f4);
+            itemGeneratorList.add(f5);
+            itemGeneratorList.add(f6);
+            itemGeneratorList.add(f7);
+            itemGeneratorList.add(f8);
+        }
 
-            if (randomNumber < 10) {
-                return new SilverGenerator();
-            } else if (randomNumber < 13) {
-                return new GoldGenerator();
-            } else {
-                return new GemGenerator();
-            }
+        for (int i = 0; i < 100; i++) {
+            int index = new Random().nextInt(itemGeneratorList.size());
+            itemGeneratorList.get(index).openReward();
         }
     }
 }
